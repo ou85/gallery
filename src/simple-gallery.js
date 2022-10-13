@@ -1,30 +1,43 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-
-export default function StandardImageList() {
+import { Link } from "react-router-dom";
+import { Grid, ImageList, ImageListItem } from "@mui/material";
+export default function SimpleGallery() {
   return (
-    <Box
+    <Grid
+      container
+      direction="column"
       display="flex"
       justifyContent="center"
       alignItems="center"
       minHeight="100vh"
       sx={{ backgroundColor: "text.primary" }}
     >
-      <ImageList sx={{ width: 600, height: 460 }} cols={3} rowHeight={150}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=400&h=300&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=400&h=300&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </Box>
+      <Grid
+        height="3rem"
+        alignItems="left"
+        justifyContent="center"
+        // backgroundColor="lightgreen"
+        display="flex"
+      >
+        <Link to="/gallery"> gallery </Link>
+      </Grid>
+      <Grid
+      // backgroundColor="gray"
+      >
+        <ImageList sx={{ width: 600, height: 460 }} cols={3} rowHeight={150}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=400&h=300&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=400&h=300&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Grid>
+    </Grid>
   );
 }
 
