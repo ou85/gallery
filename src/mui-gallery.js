@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid, Paper } from "@mui/material";
 
-export default function Gallery() {
+export default function MuiGallery() {
   return (
     <Grid
       container

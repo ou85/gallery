@@ -19,7 +19,7 @@ export default function SimpleGallery() {
         // backgroundColor="lightgreen"
         display="flex"
       >
-        <Link to="/gallery"> gallery </Link>
+        <Link to="/mui-gallery"> gallery </Link>
       </Grid>
       <Grid
       // backgroundColor="gray"
