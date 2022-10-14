@@ -37,7 +37,7 @@ export default function ImageSwapper() {
 
   return (
     <>
-      <img src={currentImage} />
+      <img src={`${currentImage}?w=800&h=600&fit=crop&auto=format`} />
     </>
   );
 }

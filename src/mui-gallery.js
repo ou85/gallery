@@ -67,7 +67,9 @@ export default function MuiGallery() {
                     <Img
                       alt="complex"
                       // src={value.src}
-                      src={value}
+                      // src={`${item.img}?w=400&h=300&fit=crop&auto=format`}
+                      // src={value}
+                      src={`${value}?w=400&h=300&fit=crop&auto=format`}
                       sx={{
                         height: 200,
                         width: 300,
@@ -79,7 +81,7 @@ export default function MuiGallery() {
             ))}
           </Grid>
 
-          <Grid
+          {/* <Grid
             container
             paddingBottom="3rem"
             justifyContent="center"
@@ -94,7 +96,7 @@ export default function MuiGallery() {
                 </ButtonBase>
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Grid>
         <ImageSwapper />
       </Grid>
