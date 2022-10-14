@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { Grid, ImageList, ImageListItem } from "@mui/material";
+
 export default function SimpleGallery() {
   return (
     <Grid
@@ -19,7 +20,8 @@ export default function SimpleGallery() {
         // backgroundColor="lightgreen"
         display="flex"
       >
-        <Link to="/mui-gallery"> gallery </Link>
+        <Link to="/mui-gallery"> gallery | </Link>
+        <Link to="/swapper"> | swapper </Link>
       </Grid>
       <Grid
       // backgroundColor="gray"

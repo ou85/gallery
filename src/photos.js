@@ -1,3 +1,18 @@
+export const images = [
+  "https://picsum.photos/800/600",
+  "https://picsum.photos/800/601",
+  "https://picsum.photos/800/602",
+  "https://picsum.photos/800/603",
+  "https://picsum.photos/800/604",
+  "https://picsum.photos/800/605",
+  "https://picsum.photos/801/600",
+  "https://picsum.photos/801/601",
+  "https://picsum.photos/801/602",
+  "https://picsum.photos/801/603",
+  "https://picsum.photos/801/604",
+  "https://picsum.photos/801/605",
+];
+
 export const photos = [
   {
     src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
