@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Grid, ImageList, ImageListItem } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { itemData } from "./photos";
+import { itemData } from "./components/photos";
 
 const theme = createTheme({
   typography: {

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Box, Grid, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ButtonBase from "@mui/material/ButtonBase";
-import { images, photos } from "./photos";
-import ImageSwapper from "./image-swapper";
+import { images, photos } from "./components/photos";
+import ImageSwapper from "./components/image-swapper";
 
 export default function MuiGallery() {
   const Img = styled("img")({
