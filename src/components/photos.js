@@ -1,16 +1,25 @@
 export const images = [
-  "https://picsum.photos/800/600",
+  "https://picsum.photos/800/606",
   "https://picsum.photos/800/601",
   "https://picsum.photos/800/602",
   "https://picsum.photos/800/603",
   "https://picsum.photos/800/604",
   "https://picsum.photos/800/605",
-  "https://picsum.photos/801/600",
-  "https://picsum.photos/801/601",
-  "https://picsum.photos/801/602",
+  "https://picsum.photos/802/600",
+  "https://picsum.photos/802/599",
+  "https://picsum.photos/802/608",
   "https://picsum.photos/801/603",
   "https://picsum.photos/801/604",
   "https://picsum.photos/801/605",
+  // "https://picsum.photos/902/601",
+  // "https://picsum.photos/902/602",
+  // "https://picsum.photos/902/603",
+  // "https://picsum.photos/902/604",
+  // "https://picsum.photos/902/605",
+  // "https://picsum.photos/900/700",
+  // "https://picsum.photos/900/701",
+  // "https://picsum.photos/900/702",
+  // "https://picsum.photos/900/703",
 ];
 
 export const photos = [
@@ -99,3 +108,11 @@ export const itemData = [
     title: "Mushrooms",
   },
 ];
+
+let webPath = "https://picsum.photos/900";
+const photo = [];
+for (let i = 600; i <= 700; i++) {
+  photo.push(`${webPath}/${i}`);
+}
+
+export const photoExt = photo;

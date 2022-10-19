@@ -4,6 +4,7 @@ import "./index.css";
 import MuiGallery from "./mui-gallery";
 import SimpleGallery from "./simple-gallery";
 import ImageSwapper from "./components/image-swapper";
+import MuiSwapper from "./mui-swapper";
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,6 +16,7 @@ root.render(
       <Route exact path="/gallery" element={<SimpleGallery />} />
       <Route exact path="/mui-gallery" element={<MuiGallery />} />
       <Route exact path="/swapper" element={<ImageSwapper />} />
+      <Route exact path="/swappers" element={<MuiSwapper />} />
     </Routes>
   </Router>
 );

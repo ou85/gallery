@@ -1,20 +1,11 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { styled } from "@mui/material/styles";
 import { Box, Grid, Paper, ButtonBase } from "@mui/material";
 
-import { ImageSwapper7 } from "./components/image-swappers";
+import { ImageSwapper7, ImageSwapper8 } from "./components/image-swappers";
 import { images, photos } from "./components/photos";
 
-export default function MuiGallery() {
-  const Img = styled("img")({
-    margin: "auto",
-    display: "block",
-    justifyContent: "center",
-    maxWidth: "95%",
-    maxHeight: "95%",
-  });
-
+export default function MuiSwapper() {
   return (
     <Box sx={{ backgroundColor: "text.primary" }}>
       <Grid
@@ -41,7 +32,6 @@ export default function MuiGallery() {
           height="3rem"
         >
           <Link to="/"> gallery </Link>
-          <Link to="/swappers"> swapper </Link>
         </Grid>
         <Grid item xs={12}>
           <Grid
@@ -60,20 +50,11 @@ export default function MuiGallery() {
                   sx={{
                     height: 200,
                     width: 300,
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === "dark" ? "#1A2027" : "#3A3B3C",
+                    backgroundColor: "#3A3B3C",
                   }}
                 >
                   <ButtonBase sx={{ height: 200, width: 300 }}>
-                    <Img
-                      alt="complex"
-                      // src={value.src}
-                      src={`${value}?w=400&h=300&fit=crop&auto=format`}
-                      sx={{
-                        height: 200,
-                        width: 300,
-                      }}
-                    />
+                    <ImageSwapper8 />
                   </ButtonBase>
                 </Paper>
               </Grid>
