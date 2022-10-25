@@ -1,7 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/material/styles";
-import { Box, Grid, Paper, ButtonBase } from "@mui/material";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import ButtonBase from "@mui/material/ButtonBase";
 
 import { ImageSwapper7 } from "./components/image-swappers";
 import { images, photos } from "./components/photos";
@@ -41,7 +44,7 @@ export default function MuiGallery() {
           height="3rem"
         >
           <Link to="/"> gallery </Link>
-          <Link to="/swappers"> swapper </Link>
+          <Link to="/mui-swapper"> swapper </Link>
         </Grid>
         <Grid item xs={12}>
           <Grid

@@ -1,3 +1,13 @@
+// random photo
+// return https://images.unsplash.com/random?w=800&q=95
+export const randomPhoto = "https://source.unsplash.com/random";
+
+export const randomPhotos = [
+  "https://source.unsplash.com/random?w=800&q=90",
+  "https://source.unsplash.com/random?w=800&q=95",
+  "https://source.unsplash.com/random?w=800&q=85",
+];
+
 export const images = [
   "https://picsum.photos/800/606",
   "https://picsum.photos/800/601",
@@ -8,9 +18,12 @@ export const images = [
   "https://picsum.photos/802/600",
   "https://picsum.photos/802/599",
   "https://picsum.photos/802/608",
-  "https://picsum.photos/801/603",
-  "https://picsum.photos/801/604",
-  "https://picsum.photos/801/605",
+  // "https://picsum.photos/801/603",
+  // "https://picsum.photos/801/604",
+  // "https://picsum.photos/801/605",
+  "https://source.unsplash.com/random?w=800&q=90",
+  "https://source.unsplash.com/random?w=800&q=95",
+  "https://source.unsplash.com/random?w=800&q=85",
   // "https://picsum.photos/902/601",
   // "https://picsum.photos/902/602",
   // "https://picsum.photos/902/603",
@@ -109,7 +122,7 @@ export const itemData = [
   },
 ];
 
-let webPath = "https://picsum.photos/900";
+let webPath = "https://picsum.photos/1080";
 const photo = [];
 for (let i = 600; i <= 700; i++) {
   photo.push(`${webPath}/${i}`);

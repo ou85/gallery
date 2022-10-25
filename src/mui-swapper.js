@@ -1,8 +1,11 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { Box, Grid, Paper, ButtonBase } from "@mui/material";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import ButtonBase from "@mui/material/ButtonBase";
 
-import { ImageSwapper7, ImageSwapper8 } from "./components/image-swappers";
+import { ImageSwapper8, ImageSwapper12 } from "./components/image-swappers";
 import { images, photos } from "./components/photos";
 
 export default function MuiSwapper() {
@@ -54,14 +57,13 @@ export default function MuiSwapper() {
                   }}
                 >
                   <ButtonBase sx={{ height: 200, width: 300 }}>
-                    <ImageSwapper8 />
+                    <ImageSwapper12 />
                   </ButtonBase>
                 </Paper>
               </Grid>
             ))}
           </Grid>
         </Grid>
-        <ImageSwapper7 />
       </Grid>
     </Box>
   );
