@@ -5,7 +5,7 @@ import MuiGallery from "./mui-gallery";
 import SimpleGallery from "./simple-gallery";
 import ImageSwapper from "./components/image-swapper";
 import MuiSwapper from "./mui-swapper";
-import Tabs from "./components/tabs";
+import Tabs from "./tabs";
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

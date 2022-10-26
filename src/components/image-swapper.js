@@ -24,8 +24,11 @@ import { images } from "./photos";
 // }
 
 ///////////////////////////////////////////////
-export default function ImageSwapper() {
-  const [currentImage, setCurrentImage] = useState(null);
+// export default function ImageSwapper() {
+const ImageSwapper = () => {
+  const [currentImage, setCurrentImage] = useState(
+    "https://picsum.photos/900/600"
+  );
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -36,9 +39,10 @@ export default function ImageSwapper() {
   }, []);
 
   return (
-    <>
+    <div>
       <img src={`${currentImage}?w=800&h=600&fit=crop&auto=format`} />
-    </>
+    </div>
   );
-}
+};
+export default ImageSwapper;
 //////////////////////////////////////////////

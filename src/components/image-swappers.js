@@ -192,10 +192,6 @@ export function ImageSwapper10() {
         <Img
           // src={currentImage}
           src={`${currentImage}?w=900&h=600&fit=crop&auto=format`}
-          sx={{
-            width: 800,
-            height: 450,
-          }}
         />
       </Link>
       {console.log(currentImage)}
@@ -211,7 +207,7 @@ export function ImageSwapper12() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage(photoExt[Math.floor(Math.random() * photoExt.length)]);
-    }, 12 * 1000);
+    }, 10 * 1000);
 
     return () => clearInterval(intervalId);
   }, []);
